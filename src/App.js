@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
-function App() {
+import React from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+import RandomWheel from "./routes/Wheel";
+import DestinyRoulette from "./routes/DestinyRoulette";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          {/* <Route exact path="/">
+            <div></div>
+          </Route> */}
+          <Route path="/wheel" element={<RandomWheel />} />
+          <Route path="/destiny-roulette" element={<DestinyRoulette />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
-}
+};
 
 export default App;

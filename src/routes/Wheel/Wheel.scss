@@ -1,0 +1,16 @@
+.wheel-group-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.wheel-container {
+  width: 500px;
+  height: 500px;
+
+  & > div {
+    height: 100%;
+    width: 100%;
+    max-height: unset;
+    max-width: unset;
+  }
+}
