@@ -18,11 +18,8 @@ const getRandomArrayIndex = (array) => {
 
 const formatOptions = (arrayOfOptions) => {
   return arrayOfOptions.map((option) => {
-    const randomColor = getRandomArrayIndex(colorList);
-
     return {
       option: option,
-      // style: { backgroundColor: colorList[randomColor] },
     };
   });
 };
@@ -30,7 +27,7 @@ const formatOptions = (arrayOfOptions) => {
 const exoticWeaponList = formatOptions(primaries.concat(secondaries, heavies));
 const gameModesList = formatOptions(gameModes);
 
-const spinDelay = 10 * 1000;
+// const spinDelay = 10 * 1000;
 
 const RandomWheel = () => {
   const [isWeaponsSpinning, setIsWeaponsSpinning] = useState(false);
@@ -99,7 +96,9 @@ const RandomWheel = () => {
         </div>
       </div>
 
-      <Button onClick={handleSpinClick}>SPIN</Button>
+      <Button variant="contained" onClick={handleSpinClick}>
+        SPIN
+      </Button>
 
       {showResults && (
         <p>

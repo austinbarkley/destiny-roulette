@@ -1,7 +1,7 @@
-import "./App.css";
+import "./App.scss";
 
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import RandomWheel from "./routes/Wheel";
 import DestinyRoulette from "./routes/DestinyRoulette";

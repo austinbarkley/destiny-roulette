@@ -76,11 +76,39 @@ const secondaries = [
   "Ticuu's Divination",
   "Vex Mythoclast",
   "Lorentz Driver",
+
+  // 30th anniversary
+  "Forerunner",
 ];
 
-// heavy
+// heavies
 const heavies = [];
 
 const gameModes = ["Strikes", "Grand Master Strike", "Crucible", "Gambit"];
 
-export { colorList, primaries, secondaries, heavies, gameModes };
+const exoticWeapons = primaries.concat(secondaries, heavies);
+
+const members = [
+  "DirtyGambit",
+  "Sentient",
+  "WolfsGambit",
+  "Dat1guyTho",
+  "Tony Marlow",
+  "Darkest",
+  "Johnny",
+];
+
+const testRollTimeDuration = 500;
+const rollTimeDuration = 1500;
+
+export {
+  colorList,
+  primaries,
+  secondaries,
+  heavies,
+  gameModes,
+  exoticWeapons,
+  members,
+  testRollTimeDuration,
+  rollTimeDuration,
+};
